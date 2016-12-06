@@ -73,6 +73,11 @@ if(!class_exists("FreshDeskAPI")){
 			wp_enqueue_style( 'fd-style' );
 			wp_register_script( 'fd-script-frontend', plugins_url('js/fd-script-frontend.js', __FILE__), array('jquery'), '1.1', true );
 			wp_enqueue_script( 'fd-script-frontend' );
+			wp_enqueue_script( 'jquery-ui-datepicker' );
+
+		    // You need styling for the datepicker. For simplicity I've linked to Google's hosted jQuery UI CSS.
+		    wp_register_style( 'jquery-ui', '//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css' );
+		    wp_enqueue_style( 'jquery-ui' );
 		}
 		
 		
